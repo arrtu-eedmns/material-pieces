@@ -1,0 +1,25 @@
+{
+  "name": "material-pieces",
+  "version": "1.0.0",
+  "description": "Pieces — sistema de componentes CSS/JS baseado em HSL tokens e Material Design 3",
+  "style": "css/pieces.css",
+  "files": [
+    "css/",
+    "js/"
+  ],
+  "keywords": [
+    "css",
+    "components",
+    "design-system",
+    "material-design",
+    "material-design-3",
+    "md3",
+    "hsl",
+    "tokens"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SEU_USUARIO/material-pieces.git"
+  }
+}
