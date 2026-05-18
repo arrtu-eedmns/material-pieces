@@ -1,10 +1,23 @@
 /* ─── Pieces — Neutral — Switch ────────────────────────────────────────────────
-   Track e indicador retangulares. Visual de toggle flat tipo VSCode/Linear.
+   Track: outlined apenas — background sempre transparente em qualquer estado.
+   Indicator: quadrado sólido — único elemento com fill.
+   Borda 1px fina (base usa 2px).
 ────────────────────────────────────────────────────────────────────────────── */
 
 .piece-skin-neutral .piece-switch,
 .piece-switch.piece-skin-neutral {
     --switch-radius: 4px;
+
+    /* Track outlined — sem fill em nenhum estado */
+    background: transparent;
+    border-width: 1px;
+
+    &:hover,
+    &.piece-actived,
+    &:has(input:checked),
+    &:active {
+        background: transparent;
+    }
 
     .piece-indicator {
         --indicator-radius: 3px;
