@@ -1,25 +1,19 @@
 /* ─── Pieces — Neutral — Switch ────────────────────────────────────────────────
-   Track: outlined apenas — background sempre transparente em qualquer estado.
-   Indicator: quadrado sólido — único elemento com fill.
-   Borda 1px fina (base usa 2px).
+   Track: pill (fully rounded), 30×50px, borda 1px.
+   OFF → bg sutil (auto-02), borda visível.
+   ON  → bg accent (auto-11), borda some, indicator vira auto-02.
+   Indicator: circular (pill), único elemento com fill sólido.
 ────────────────────────────────────────────────────────────────────────────── */
 
 .piece-skin-neutral .piece-switch,
 .piece-switch.piece-skin-neutral {
-    --switch-radius: 4px;
+    --switch-radius: 32px;
 
-    /* Track outlined — sem fill em nenhum estado */
-    background: transparent;
+    width:        50px;
+    height:       30px;
     border-width: 1px;
 
-    &:hover,
-    &.piece-actived,
-    &:has(input:checked),
-    &:active {
-        background: transparent;
-    }
-
     .piece-indicator {
-        --indicator-radius: 3px;
+        --indicator-radius: 32px;
     }
 }
