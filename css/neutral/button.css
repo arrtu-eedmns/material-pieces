@@ -1,0 +1,59 @@
+/* ─── Pieces — Neutral — Button ───────────────────────────────────────────────
+   Modelo Developer/Neutral: retangular, compacto, outlined como padrão.
+   Escala de tamanhos própria — não segue o MD3.
+   Container: .piece-skin-neutral no pai aplica ao bloco inteiro.
+   Override:  .piece-button.piece-skin-neutral no próprio elemento.
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-skin-neutral .piece-button,
+.piece-button.piece-skin-neutral {
+
+    font-weight: 400;
+    letter-spacing: 0;
+
+    &.piece-extra-small {
+        --height:        24px;
+        --border-radius: 4px;
+        --active-radius: 4px;
+        padding: 8px;
+        gap:     4px;
+        .piece-label { font-size: 11px; }
+        .piece-icon  { font-size: 14px; }
+    }
+    &.piece-small {
+        --height:        28px;
+        --border-radius: 4px;
+        --active-radius: 4px;
+        padding: 10px;
+        gap:     4px;
+        .piece-label { font-size: 12px; }
+        .piece-icon  { font-size: 15px; }
+    }
+    &.piece-medium {
+        --height:        32px;
+        --border-radius: 4px;
+        --active-radius: 4px;
+        padding: 12px;
+        gap:     6px;
+        .piece-label { font-size: 13px; }
+        .piece-icon  { font-size: 16px; }
+    }
+    &.piece-large {
+        --height:        40px;
+        --border-radius: 5px;
+        --active-radius: 5px;
+        padding: 16px;
+        gap:     8px;
+        .piece-label { font-size: 14px; }
+        .piece-icon  { font-size: 18px; }
+    }
+    &.piece-extra-large {
+        --height:        48px;
+        --border-radius: 6px;
+        --active-radius: 6px;
+        padding: 20px;
+        gap:     8px;
+        .piece-label { font-size: 15px; }
+        .piece-icon  { font-size: 20px; }
+    }
+}

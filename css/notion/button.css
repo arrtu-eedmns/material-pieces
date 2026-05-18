@@ -1,10 +1,10 @@
-/* ─── Pieces — Notion — Button ───────────────────────────────────────────────
-   Container: .piece-notion no pai aplica o modelo ao bloco inteiro.
-   Override:  .piece-button.piece-notion no próprio elemento.
-────────────────────────────────────────────────────────────────────────────── */
+﻿/* â”€â”€â”€ Pieces â€” Notion â€” Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Container: .piece-skin-notion no pai aplica o modelo ao bloco inteiro.
+   Override:  .piece-button.piece-skin-notion no prÃ³prio elemento.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
-.piece-notion .piece-button,
-.piece-button.piece-notion {
+.piece-skin-notion .piece-button,
+.piece-button.piece-skin-notion {
 
     &.piece-extra-small {
         --border-radius: 4px;

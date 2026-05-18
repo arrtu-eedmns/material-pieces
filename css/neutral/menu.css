@@ -1,0 +1,31 @@
+/* ─── Pieces — Neutral — Menu ──────────────────────────────────────────────────
+   Menu denso: itens compactos, border-radius baixo, borda fina.
+   Segue o padrão Notion/Linear: menos padding, sem efeito de elevação exagerado.
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-skin-neutral .piece-menu,
+.piece-menu.piece-skin-neutral {
+    border-radius: 6px;
+    padding: 4px;
+
+    .piece-menu-item {
+        border-radius: 4px;
+        height: 28px;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 0 8px;
+        gap: 6px;
+
+        .piece-icon {
+            font-size: 16px;
+        }
+    }
+
+    .piece-menu-section-label {
+        font-size: 11px;
+        font-weight: 500;
+        padding: 4px 8px 2px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+}

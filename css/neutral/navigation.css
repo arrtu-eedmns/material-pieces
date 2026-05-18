@@ -1,0 +1,17 @@
+/* ─── Pieces — Neutral — Navigation ───────────────────────────────────────────
+   Rail/barra sem pill indicator. Item ativo: background sutil, sem pílula.
+   Compacto: texto e ícones menores, menos padding.
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-skin-neutral .piece-navigation,
+.piece-navigation.piece-skin-neutral {
+
+    .piece-nav-item {
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 400;
+        gap: 6px;
+
+        .material-symbols-rounded { font-size: 18px; }
+    }
+}

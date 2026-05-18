@@ -1,11 +1,11 @@
-/* ─── Pieces — MD3 — Button ─────────────────────────────────────────────────
-   Border-radius Material Design 3 (pill proporcional à altura).
-   Container: .piece-md3 no pai define o modelo padrão.
-   Override:  .piece-button.piece-md3 no próprio elemento.
-────────────────────────────────────────────────────────────────────────────── */
+﻿/* â”€â”€â”€ Pieces â€” MD3 â€” Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Border-radius Material Design 3 (pill proporcional Ã  altura).
+   Container: .piece-skin-md3 no pai define o modelo padrÃ£o.
+   Override:  .piece-button.piece-skin-md3 no prÃ³prio elemento.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
-.piece-md3 .piece-button,
-.piece-button.piece-md3 {
+.piece-skin-md3 .piece-button,
+.piece-button.piece-skin-md3 {
 
     &.piece-extra-small {
         --border-radius: 16px;

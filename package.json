@@ -11,10 +11,12 @@
     ".":                  "./css/pieces.css",
     "./md3":              "./css/pieces.md3.css",
     "./notion":           "./css/pieces.notion.css",
+    "./neutral":          "./css/pieces.neutral.css",
     "./all":              "./css/pieces.all.css",
     "./base/*":           "./css/base/*.css",
     "./md3/*":            "./css/md3/*.css",
-    "./notion/*":         "./css/notion/*.css"
+    "./notion/*":         "./css/notion/*.css",
+    "./neutral/*":        "./css/neutral/*.css"
   },
   "keywords": [
     "css",

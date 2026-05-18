@@ -1,0 +1,67 @@
+/* ─── Pieces — Neutral — Text Field ───────────────────────────────────────────
+   Estilo Vercel / VSCode: label estático acima do campo, borda fina 1px,
+   sem animação de floating label. Compacto e limpo.
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-skin-neutral .piece-text-field,
+.piece-text-field.piece-skin-neutral {
+
+    margin-top: 20px; /* espaço reservado para o label acima */
+
+    /* ── Label sempre acima do campo ── */
+    .piece-field-outline > .piece-field-container > .piece-label {
+        top: -20px;
+        left: 0;
+        font-size: 12px;
+        font-weight: 500;
+        transform: none;
+        transition: none;
+    }
+
+    /* Sobrescreve o estado focus/valid — label não se move */
+    .piece-field-outline:focus-within > .piece-field-container > .piece-label,
+    .piece-field-outline:has(input:valid) > .piece-field-container > .piece-label {
+        top:       -20px;
+        font-size: 12px;
+    }
+
+    /* ── Outline: borda fina, radius baixo ── */
+    .piece-field-outline {
+        overflow: visible;
+        border-width:  1px;
+        border-radius: 4px;
+
+        /* Legend desnecessária — label não usa o recorte da borda */
+        legend { display: none; }
+
+        .piece-field-container {
+            border-radius: 3px;
+            height: 32px;
+            padding: 0 10px;
+            gap: 8px;
+
+            input { font-size: 13px; }
+
+            .piece-icon-leading,
+            .piece-icon-trailing { font-size: 15px; }
+
+            .piece-field-prefix,
+            .piece-field-suffix { font-size: 13px; }
+
+            > .piece-icon-button { margin-right: -4px; }
+        }
+    }
+
+    /* ── Tamanhos compactos ── */
+    &.piece-extra-small .piece-field-container { height: 26px; }
+    &.piece-small       .piece-field-container { height: 29px; }
+    &.piece-medium      .piece-field-container { height: 32px; }
+    &.piece-large       .piece-field-container { height: 36px; }
+    &.piece-extra-large .piece-field-container { height: 40px; }
+
+    /* ── Suporte/erro ── */
+    .piece-field-support {
+        padding: 0 2px;
+        font-size: 11px;
+    }
+}

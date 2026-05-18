@@ -1,0 +1,11 @@
+/* ─── Pieces — Neutral — Group Button ─────────────────────────────────────────
+   --round == --fully-round = sem morphing de shape no item ativo.
+   A seleção é indicada apenas por background, não por forma.
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-skin-neutral .piece-group-button > .piece-button,
+.piece-group-button.piece-skin-neutral > .piece-button {
+
+    --round:       4px;
+    --fully-round: 4px;
+}

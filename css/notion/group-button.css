@@ -1,9 +1,9 @@
-/* ─── Pieces — Notion — Group Button ────────────────────────────────────────
+﻿/* â”€â”€â”€ Pieces â€” Notion â€” Group Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    --round e --fully-round com valores Notion (pequenos, retangulares).
-────────────────────────────────────────────────────────────────────────────── */
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
-.piece-notion .piece-group-button > .piece-button,
-.piece-group-button.piece-notion > .piece-button {
+.piece-skin-notion .piece-group-button > .piece-button,
+.piece-group-button.piece-skin-notion > .piece-button {
 
     &.piece-extra-small {
         --round: 2px;

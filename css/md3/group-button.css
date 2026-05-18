@@ -1,10 +1,10 @@
-/* ─── Pieces — MD3 — Group Button ───────────────────────────────────────────
+﻿/* â”€â”€â”€ Pieces â€” MD3 â€” Group Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    --round: raio dos itens do meio e das pontas internas.
-   --fully-round: raio do item ativo (pill proporcional à altura).
-────────────────────────────────────────────────────────────────────────────── */
+   --fully-round: raio do item ativo (pill proporcional Ã  altura).
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
-.piece-md3 .piece-group-button > .piece-button,
-.piece-group-button.piece-md3 > .piece-button {
+.piece-skin-md3 .piece-group-button > .piece-button,
+.piece-group-button.piece-skin-md3 > .piece-button {
 
     &.piece-extra-small {
         --round: 4px;

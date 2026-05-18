@@ -1,9 +1,9 @@
-/* ─── Pieces — MD3 — Icon Button ────────────────────────────────────────────
-   Border-radius Material Design 3 (pill proporcional à altura).
-────────────────────────────────────────────────────────────────────────────── */
+﻿/* â”€â”€â”€ Pieces â€” MD3 â€” Icon Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Border-radius Material Design 3 (pill proporcional Ã  altura).
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
-.piece-md3 .piece-icon-button,
-.piece-icon-button.piece-md3 {
+.piece-skin-md3 .piece-icon-button,
+.piece-icon-button.piece-skin-md3 {
 
     &.piece-extra-small {
         --border-radius: 16px;
