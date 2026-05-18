@@ -1,0 +1,31 @@
+/* ─── Pieces — Notion — Text Field ───────────────────────────────────────────
+   Notion: campo com borda fina, raio pequeno, altura compacta.
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-notion .piece-text-field,
+.piece-text-field.piece-notion {
+
+    .piece-field-outline {
+        border-radius: 4px;
+        border-width: 1px;
+
+        &:focus-within { border-width: 2px; }
+
+        legend { margin-left: 8px; }
+
+        .piece-field-container {
+            border-radius: 3px;
+            padding: 0 10px;
+        }
+
+        > .piece-field-container > .piece-label {
+            left: 10px;
+        }
+    }
+
+    &.piece-extra-small .piece-field-container { height: 32px; }
+    &.piece-small       .piece-field-container { height: 36px; }
+    &.piece-medium      .piece-field-container { height: 40px; }
+    &.piece-large       .piece-field-container { height: 44px; }
+    &.piece-extra-large .piece-field-container { height: 48px; }
+}

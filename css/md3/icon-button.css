@@ -1,0 +1,28 @@
+/* ─── Pieces — MD3 — Icon Button ────────────────────────────────────────────
+   Border-radius Material Design 3 (pill proporcional à altura).
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-md3 .piece-icon-button,
+.piece-icon-button.piece-md3 {
+
+    &.piece-extra-small {
+        --border-radius: 16px;
+        --active-radius: 12px;
+    }
+    &.piece-small {
+        --border-radius: 20px;
+        --active-radius: 12px;
+    }
+    &.piece-medium {
+        --border-radius: 28px;
+        --active-radius: 16px;
+    }
+    &.piece-large {
+        --border-radius: 48px;
+        --active-radius: 28px;
+    }
+    &.piece-extra-large {
+        --border-radius: 68px;
+        --active-radius: 28px;
+    }
+}

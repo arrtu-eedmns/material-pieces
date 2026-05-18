@@ -1,0 +1,12 @@
+/* ─── Pieces — MD3 — FAB ─────────────────────────────────────────────────────
+   Border-radius Material Design 3.
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-md3 .piece-FAB,
+.piece-FAB.piece-md3 {
+    --border-radius: 16px;
+
+    &.piece-small  { --border-radius: 12px; }
+    &.piece-medium { --border-radius: 20px; }
+    &.piece-large  { --border-radius: 28px; }
+}

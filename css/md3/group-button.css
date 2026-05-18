@@ -1,0 +1,29 @@
+/* ─── Pieces — MD3 — Group Button ───────────────────────────────────────────
+   --round: raio dos itens do meio e das pontas internas.
+   --fully-round: raio do item ativo (pill proporcional à altura).
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-md3 .piece-group-button > .piece-button,
+.piece-group-button.piece-md3 > .piece-button {
+
+    &.piece-extra-small {
+        --round: 4px;
+        --fully-round: calc(32px / 2);
+    }
+    &.piece-small {
+        --round: 8px;
+        --fully-round: calc(40px / 2);
+    }
+    &.piece-medium {
+        --round: 8px;
+        --fully-round: calc(56px / 2);
+    }
+    &.piece-large {
+        --round: 16px;
+        --fully-round: calc(96px / 2);
+    }
+    &.piece-extra-large {
+        --round: 20px;
+        --fully-round: calc(136px / 2);
+    }
+}

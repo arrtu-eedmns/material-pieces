@@ -7,6 +7,15 @@
     "css/",
     "js/"
   ],
+  "exports": {
+    ".":                  "./css/pieces.css",
+    "./md3":              "./css/pieces.md3.css",
+    "./notion":           "./css/pieces.notion.css",
+    "./all":              "./css/pieces.all.css",
+    "./base/*":           "./css/base/*.css",
+    "./md3/*":            "./css/md3/*.css",
+    "./notion/*":         "./css/notion/*.css"
+  },
   "keywords": [
     "css",
     "components",

@@ -1,0 +1,33 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Pieces — Bundle All (MD3 + Notion)
+   Carrega base estrutural + MD3 + Notion em cascata.
+   Use para projetos híbridos onde diferentes seções usam modelos distintos.
+
+   Uso típico:
+     <body class="piece-md3">           → toda a página em MD3
+     <section class="piece-notion">     → esta seção em Notion
+     <div class="piece-button piece-notion"> → override em componente
+
+   Ordem de cascata: base → md3 → notion
+   (notion sempre vence por estar depois, mesma especificidade)
+═══════════════════════════════════════════════════════════════════════════ */
+
+/* Inclui MD3 completo (base + md3 + reset + fontes) */
+@import url("pieces.css");
+
+/* Adiciona os overrides Notion por cima */
+@import url("notion/button.css");
+@import url("notion/group-button.css");
+@import url("notion/icon-button.css");
+@import url("notion/checkbox.css");
+@import url("notion/split-button.css");
+@import url("notion/FAB.css");
+@import url("notion/badge.css");
+@import url("notion/tooltip.css");
+@import url("notion/snackbar.css");
+@import url("notion/toast.css");
+@import url("notion/switch.css");
+@import url("notion/menu.css");
+@import url("notion/text-field.css");
+@import url("notion/textarea.css");
+@import url("notion/navigation.css");

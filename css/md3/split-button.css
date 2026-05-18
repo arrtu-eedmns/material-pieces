@@ -1,0 +1,29 @@
+/* ─── Pieces — MD3 — Split Button ───────────────────────────────────────────
+   --split-outer: raio nas pontas externas (pill proporcional à altura).
+   --split-inner: raio nas pontas internas (gap entre leading e trailing).
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-md3 .piece-split-button,
+.piece-split-button.piece-md3 {
+
+    &.piece-extra-small {
+        --split-outer: 16px;
+        --split-inner: 4px;
+    }
+    &.piece-small {
+        --split-outer: 20px;
+        --split-inner: 4px;
+    }
+    &.piece-medium {
+        --split-outer: 28px;
+        --split-inner: 4px;
+    }
+    &.piece-large {
+        --split-outer: 48px;
+        --split-inner: 8px;
+    }
+    &.piece-extra-large {
+        --split-outer: 68px;
+        --split-inner: 12px;
+    }
+}

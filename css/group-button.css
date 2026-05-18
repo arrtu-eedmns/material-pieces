@@ -1,0 +1,48 @@
+.piece-group-button {
+
+    --gap: 2px;
+    display: inline-flex;
+    gap: var(--gap);
+
+    > .piece-button {
+        transition: border-radius 0.15s ease;
+
+        &.piece-extra-small {
+            --round: 4px;
+            --fully-round: calc(32px / 2);
+        }
+        &.piece-small {
+            --round: 8px;
+            --fully-round: calc(40px / 2);
+        }
+        &.piece-medium {
+            --round: 8px;
+            --fully-round: calc(56px / 2);
+        }
+        &.piece-large {
+            --round: 16px;
+            --fully-round: calc(96px / 2);
+        }
+        &.piece-extra-large {
+            --round: 20px;
+            --fully-round: calc(136px / 2);
+        }
+
+        border-radius: var(--round);
+
+        &.piece-actived,
+        &:has(input:checked) {
+            border-radius: var(--fully-round);
+        }
+
+        &:first-child {
+            border-radius: var(--fully-round) var(--round) var(--round) var(--fully-round);
+        }
+        &:last-child {
+            border-radius: var(--round) var(--fully-round) var(--fully-round) var(--round);
+        }
+        &:not(:first-child):not(:last-child):not(:has(input:checked)):not(.piece-actived) {
+            border-radius: var(--round);
+        }
+    }
+}

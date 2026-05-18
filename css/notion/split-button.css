@@ -1,0 +1,28 @@
+/* ─── Pieces — Notion — Split Button ────────────────────────────────────────
+   --split-outer e --split-inner com valores Notion (retangular suave).
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-notion .piece-split-button,
+.piece-split-button.piece-notion {
+
+    &.piece-extra-small {
+        --split-outer: 4px;
+        --split-inner: 2px;
+    }
+    &.piece-small {
+        --split-outer: 4px;
+        --split-inner: 2px;
+    }
+    &.piece-medium {
+        --split-outer: 6px;
+        --split-inner: 2px;
+    }
+    &.piece-large {
+        --split-outer: 8px;
+        --split-inner: 3px;
+    }
+    &.piece-extra-large {
+        --split-outer: 8px;
+        --split-inner: 3px;
+    }
+}

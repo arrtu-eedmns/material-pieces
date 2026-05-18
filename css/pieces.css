@@ -1,37 +1,67 @@
-/* import files */
+/* ═══════════════════════════════════════════════════════════════════════════
+   Pieces — Bundle padrão (MD3)
+   Equivalente a pieces.md3.css. Mantém retrocompatibilidade com
+   projetos que importam apenas pieces.css.
+
+   Para outros modelos:
+     pieces.md3.css    → explícito, igual a este
+     pieces.notion.css → base + Notion
+     pieces.all.css    → base + MD3 + Notion (modelo híbrido)
+═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Model-agnostic ── */
 @import url("theme.css");
-@import url("card.css");
-@import url("checkbox.css");
-@import url("button.css");
-@import url("divider.css");
-@import url("FAB.css");
-@import url("icon-button.css");
-@import url("navigation.css");
 @import url("surface.css");
-@import url("toolbars.css");
+@import url("ripple.css");
+
+/* ── Base estrutural ── */
+@import url("base/button.css");
+@import url("base/group-button.css");
+@import url("base/icon-button.css");
+@import url("base/checkbox.css");
+@import url("base/split-button.css");
+@import url("base/FAB.css");
+@import url("base/badge.css");
+@import url("base/tooltip.css");
+@import url("base/snackbar.css");
+@import url("base/toast.css");
+@import url("base/switch.css");
+
+/* ── Componentes sem split de modelo (mantidos flat) ── */
+@import url("card.css");
+@import url("divider.css");
+@import url("navigation.css");
+@import url("menu.css");
+@import url("FAB-menu.css");
 @import url("text-field.css");
 @import url("textarea.css");
 @import url("search.css");
-@import url("split-button.css");
-@import url("badge.css");
-@import url("tooltip.css");
-@import url("snackbar.css");
-@import url("toast.css");
-@import url("radio.css");
-@import url("switch.css");
-@import url("FAB-menu.css");
-@import url("ripple.css");
+@import url("chip.css");
+@import url("segmentedButton.css");
 @import url("table.css");
+@import url("toolbars.css");
 @import url("progressIndicator.css");
-@import url("table.css");
-@import url("menu.css");
+@import url("radio.css");
 
-/* import font/icon */
+/* ── MD3 — overrides visuais ── */
+@import url("md3/button.css");
+@import url("md3/group-button.css");
+@import url("md3/icon-button.css");
+@import url("md3/checkbox.css");
+@import url("md3/split-button.css");
+@import url("md3/FAB.css");
+@import url("md3/badge.css");
+@import url("md3/tooltip.css");
+@import url("md3/snackbar.css");
+@import url("md3/toast.css");
+@import url("md3/switch.css");
+
+/* ── Fontes e ícones ── */
 @import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
-/* main var root */
+/* ── Reset e variáveis globais ── */
 :root {
     --piece-main-color: 248;
     --piece-h: var(--piece-main-color);
@@ -53,7 +83,7 @@
     ;
 }
 
-/* main resets */
+/* ── Reset ── */
 * {
     margin: 0px;
     padding: 0px;
@@ -65,18 +95,17 @@
     --piece-scrollbar-display: block;
 }
 
-body { cursor: var(--cursor-default);}
+body { cursor: var(--cursor-default); }
 
-.piece-s-40 {--piece-s: 40%;}
+.piece-s-40 { --piece-s: 40%; }
 
 ::-webkit-scrollbar {
     width: 24px;
-    height:24px;
+    height: 24px;
     display: var(--piece-scrollbar-display);
 }
-.webkit-scrollbar-display-0 {--piece-scrollbar-display: none;}
-.webkit-scrollbar-display-1 {--piece-scrollbar-display: block;}
-
+.webkit-scrollbar-display-0 { --piece-scrollbar-display: none;  }
+.webkit-scrollbar-display-1 { --piece-scrollbar-display: block; }
 
 ::-webkit-scrollbar-track {
     background: var(--scrollbar-track);

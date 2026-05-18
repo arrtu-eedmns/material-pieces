@@ -1,0 +1,29 @@
+/* ─── Pieces — Notion — Button ───────────────────────────────────────────────
+   Container: .piece-notion no pai aplica o modelo ao bloco inteiro.
+   Override:  .piece-button.piece-notion no próprio elemento.
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-notion .piece-button,
+.piece-button.piece-notion {
+
+    &.piece-extra-small {
+        --border-radius: 4px;
+        --active-radius: 3px;
+    }
+    &.piece-small {
+        --border-radius: 4px;
+        --active-radius: 3px;
+    }
+    &.piece-medium {
+        --border-radius: 6px;
+        --active-radius: 4px;
+    }
+    &.piece-large {
+        --border-radius: 8px;
+        --active-radius: 6px;
+    }
+    &.piece-extra-large {
+        --border-radius: 8px;
+        --active-radius: 6px;
+    }
+}

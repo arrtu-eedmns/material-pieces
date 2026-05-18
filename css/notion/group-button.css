@@ -1,0 +1,28 @@
+/* ─── Pieces — Notion — Group Button ────────────────────────────────────────
+   --round e --fully-round com valores Notion (pequenos, retangulares).
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-notion .piece-group-button > .piece-button,
+.piece-group-button.piece-notion > .piece-button {
+
+    &.piece-extra-small {
+        --round: 2px;
+        --fully-round: 4px;
+    }
+    &.piece-small {
+        --round: 2px;
+        --fully-round: 4px;
+    }
+    &.piece-medium {
+        --round: 3px;
+        --fully-round: 6px;
+    }
+    &.piece-large {
+        --round: 4px;
+        --fully-round: 8px;
+    }
+    &.piece-extra-large {
+        --round: 4px;
+        --fully-round: 8px;
+    }
+}

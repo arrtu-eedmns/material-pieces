@@ -1,0 +1,28 @@
+/* ─── Pieces — Notion — Icon Button ─────────────────────────────────────────
+   Border-radius pequeno, estilo Notion (retangular suave).
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-notion .piece-icon-button,
+.piece-icon-button.piece-notion {
+
+    &.piece-extra-small {
+        --border-radius: 4px;
+        --active-radius: 3px;
+    }
+    &.piece-small {
+        --border-radius: 4px;
+        --active-radius: 3px;
+    }
+    &.piece-medium {
+        --border-radius: 6px;
+        --active-radius: 4px;
+    }
+    &.piece-large {
+        --border-radius: 8px;
+        --active-radius: 6px;
+    }
+    &.piece-extra-large {
+        --border-radius: 8px;
+        --active-radius: 6px;
+    }
+}

@@ -1,0 +1,28 @@
+/* ─── Pieces — MD3 — Checkbox ───────────────────────────────────────────────
+   Border-radius Material Design 3 (levemente arredondado, não pill).
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-md3 .piece-checkbox,
+.piece-checkbox.piece-md3 {
+
+    &.piece-extra-small {
+        --border-radius: 8px;
+        --active-radius: 10px;
+    }
+    &.piece-small {
+        --border-radius: 10px;
+        --active-radius: 12px;
+    }
+    &.piece-medium {
+        --border-radius: 12px;
+        --active-radius: 16px;
+    }
+    &.piece-large {
+        --border-radius: 20px;
+        --active-radius: 28px;
+    }
+    &.piece-extra-large {
+        --border-radius: 28px;
+        --active-radius: 36px;
+    }
+}

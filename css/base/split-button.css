@@ -1,0 +1,143 @@
+/* ─── Pieces — Base — Split Button ──────────────────────────────────────────
+   Estrutura pura. --split-outer e --split-inner definidos por modelo.
+   leading:  border-radius outer inner inner outer
+   trailing: border-radius inner outer outer inner
+   active trailing: border-radius outer (totalmente arredondado)
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-split-button {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2px;
+    position: relative;
+    user-select: none;
+
+    .piece-leading-button {
+        display: grid;
+        grid-auto-flow: column;
+        place-content: center;
+        cursor: var(--cursor-pointer);
+        text-wrap: nowrap;
+        border-radius: var(--split-outer) var(--split-inner) var(--split-inner) var(--split-outer);
+        > * { pointer-events: none; }
+    }
+
+    .piece-trailing-button {
+        display: grid;
+        place-content: center;
+        cursor: var(--cursor-pointer);
+        border-radius: var(--split-inner) var(--split-outer) var(--split-outer) var(--split-inner);
+        transition:
+            border-radius .3s cubic-bezier(0.2, 0, 0, 1),
+            padding .3s cubic-bezier(0.2, 0, 0, 1);
+        .piece-icon {
+            transition: transform .3s cubic-bezier(0.2, 0, 0, 1);
+        }
+        > * { pointer-events: none; }
+    }
+
+    /* ── elevated ── */
+    &.piece-elevated {
+        .piece-leading-button,
+        .piece-trailing-button {
+            box-shadow: 0px 0px 4px 0px hsla(
+                var(--piece-box-shadow-color-h),
+                var(--piece-s),
+                var(--piece-box-shadow-color),
+                var(--piece-box-shadow-a)
+            );
+        }
+    }
+
+    &.piece-actived {
+        .piece-trailing-button {
+            border-radius: var(--split-outer);
+            .piece-icon { transform: rotateZ(180deg); }
+        }
+    }
+
+    /* ── extra-small ── */
+    &.piece-extra-small {
+        height: 32px;
+        .piece-leading-button {
+            padding: 0 10px 0 12px;
+            gap: 4px;
+            place-items: center;
+            .piece-icon  { font-size: 20px; }
+            .piece-label { font-size: 14px; }
+        }
+        .piece-trailing-button {
+            padding: 0 14px 0 12px;
+            .piece-icon { font-size: 22px; }
+        }
+        &.piece-actived .piece-trailing-button { padding-inline: 13px; }
+    }
+
+    /* ── small ── */
+    &.piece-small {
+        height: 40px;
+        .piece-leading-button {
+            padding: 0 12px 0 16px;
+            gap: 8px;
+            place-items: center;
+            .piece-icon  { font-size: 20px; }
+            .piece-label { font-size: 14px; }
+        }
+        .piece-trailing-button {
+            padding: 0 14px 0 12px;
+            .piece-icon { font-size: 22px; }
+        }
+        &.piece-actived .piece-trailing-button { padding-inline: 13px; }
+    }
+
+    /* ── medium ── */
+    &.piece-medium {
+        height: 56px;
+        .piece-leading-button {
+            padding: 0 24px;
+            gap: 8px;
+            place-items: center;
+            .piece-icon  { font-size: 24px; }
+            .piece-label { font-size: 16px; }
+        }
+        .piece-trailing-button {
+            padding: 0 17px 0 13px;
+            .piece-icon { font-size: 26px; }
+        }
+        &.piece-actived .piece-trailing-button { padding-inline: 15px; }
+    }
+
+    /* ── large ── */
+    &.piece-large {
+        height: 96px;
+        .piece-leading-button {
+            padding: 0 48px;
+            gap: 12px;
+            place-items: center;
+            .piece-icon  { font-size: 32px; }
+            .piece-label { font-size: 24px; }
+        }
+        .piece-trailing-button {
+            padding: 0 32px 0 26px;
+            .piece-icon { font-size: 38px; }
+        }
+        &.piece-actived .piece-trailing-button { padding-inline: 29px; }
+    }
+
+    /* ── extra-large ── */
+    &.piece-extra-large {
+        height: 136px;
+        .piece-leading-button {
+            padding: 0 64px;
+            gap: 16px;
+            place-items: center;
+            .piece-icon  { font-size: 40px; }
+            .piece-label { font-size: 32px; }
+        }
+        .piece-trailing-button {
+            padding: 0 49px 0 37px;
+            .piece-icon { font-size: 50px; }
+        }
+        &.piece-actived .piece-trailing-button { padding-inline: 43px; }
+    }
+}

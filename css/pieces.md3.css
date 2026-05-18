@@ -1,0 +1,7 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Pieces — Bundle MD3 (explícito)
+   Idêntico a pieces.css. Use quando precisar nomear o modelo explicitamente.
+   Adicione class="piece-md3" no <body> ou no container raiz.
+═══════════════════════════════════════════════════════════════════════════ */
+
+@import url("pieces.css");

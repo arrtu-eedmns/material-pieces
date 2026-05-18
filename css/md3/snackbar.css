@@ -1,0 +1,8 @@
+/* ─── Pieces — MD3 — Snackbar ────────────────────────────────────────────────
+   Border-radius Material Design 3.
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-md3 .piece-snackbar,
+.piece-snackbar.piece-md3 {
+    --border-radius: 4px;
+}

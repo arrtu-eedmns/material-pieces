@@ -1,0 +1,8 @@
+/* ─── Pieces — MD3 — Badge ───────────────────────────────────────────────────
+   Border-radius Material Design 3 (pill).
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-md3 .piece-badge,
+.piece-badge.piece-md3 {
+    --border-radius: 16px;
+}

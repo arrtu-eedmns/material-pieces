@@ -1,0 +1,10 @@
+/* ─── Pieces — MD3 — Tooltip ─────────────────────────────────────────────────
+   Valores Material Design 3.
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-md3 .piece-tooltip,
+.piece-tooltip.piece-md3 {
+    --border-radius: 4px;
+    --tooltip-height: 24px;
+    --tooltip-padding: 0 8px;
+}

@@ -1,0 +1,34 @@
+/* ─── Pieces — Notion — Menu ─────────────────────────────────────────────────
+   Notion: bordas pequenas, sombra sutil, padding compacto.
+────────────────────────────────────────────────────────────────────────────── */
+
+.piece-notion .piece-menu,
+.piece-menu.piece-notion {
+    border-radius: 6px;
+    box-shadow: 0 1px 3px 0 hsla(0, 0%, 0%, 0.12), 0 1px 2px 0 hsla(0, 0%, 0%, 0.08);
+
+    ul {
+        border-radius: 6px;
+        gap: 1px;
+        padding: 4px;
+
+        & > label:first-child,
+        & > li:first-child  { border-radius: 4px 4px 2px 2px; }
+        & > label:last-child,
+        & > li:last-child   { border-radius: 2px 2px 4px 4px; }
+        & > label:only-child,
+        & > li:only-child   { border-radius: 4px; }
+    }
+
+    ul > label,
+    ul > li {
+        border-radius: 2px;
+        height: 32px;
+        font-size: 14px;
+
+        &.piece-actived,
+        &:has(input:checked) {
+            border-radius: 4px;
+        }
+    }
+}
