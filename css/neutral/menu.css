@@ -1,7 +1,7 @@
 /* ─── Pieces — Neutral — Menu ──────────────────────────────────────────────────
-   Sem box-shadow. Container outlined 1px borda auto-06, bg auto-02.
-   Gap variant: outline só nos ul (container sem borda), mesmo bg/border.
-   Itens compactos 28px, font 13px 400-weight.
+   Sem box-shadow. Estrutural: 1px border sólido, 6px radius, itens 28px.
+   Cores (bg auto-02, border auto-06) definidas via classes no HTML.
+   Gap variant: container sem borda, cada ul recebe surface+border via HTML.
    Animação de clip-path usa round 6px.
 ────────────────────────────────────────────────────────────────────────────── */
 
@@ -16,10 +16,6 @@
 /* ── Container e itens ── */
 .piece-skin-neutral .piece-menu:not(.piece-icon-button),
 .piece-menu.piece-skin-neutral:not(.piece-icon-button) {
-
-    /* bg auto-02 e border auto-06 via surface system */
-    --piece-background-color: calc(var(--piece-theme) var(--piece-theme-operator) 8%);
-    --piece-border-color:     calc(var(--piece-theme) var(--piece-theme-operator) 24%);
 
     box-shadow:    none;
     border-width:  1px;
@@ -55,30 +51,13 @@
     .piece-menu-icon    { font-size: 15px; }
     .piece-menu-trailing { font-size: 11px; }
 
-    /* ── Gap variant: outline e bg apenas nos ul, container sem borda ── */
+    /* ── Gap variant: container sem borda, ul recebe border+bg via HTML ── */
     &.piece-gap {
         border: none;
+        box-shadow: none;
         background: transparent;
-        --piece-background-color: unset;
-        --piece-border-color: unset;
 
         ul {
-            /* bg auto-02 e border auto-06 direto no ul (não é piece-surface) */
-            background: hsla(
-                var(--piece-background-color-h),
-                var(--piece-s),
-                calc(var(--piece-theme) var(--piece-theme-operator) 8%),
-                1
-            );
-            border-color: hsla(
-                var(--piece-border-color-h),
-                var(--piece-s),
-                calc(var(--piece-theme) var(--piece-theme-operator) 24%),
-                1
-            );
-            box-shadow:    none;
-            border-width:  1px;
-            border-style:  solid;
             border-radius: 5px;
 
             &:first-child { border-radius: 5px 5px 4px 4px; }
