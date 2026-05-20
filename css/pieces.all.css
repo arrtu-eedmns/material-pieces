@@ -1,38 +1,36 @@
 /* ═══════════════════════════════════════════════════════════════════════════
-   Pieces — Bundle All (MD3 + Notion + Neutral)
-   Carrega base estrutural + todos os modelos em cascata.
-   Use para projetos híbridos onde seções usam modelos distintos.
+   Pieces — Bundle All (MD3 + Neutral)
+   Carrega todos os modelos em cascata para projetos híbridos.
+   Use quando seções distintas da página usam skins diferentes.
 
    Uso típico:
-     <body class="piece-skin-md3">           → toda a página em MD3
-     <section class="piece-skin-neutral">     → esta seção em Neutral
+     <body class="piece-skin-md3">            → toda a página em MD3
+     <section class="piece-skin-neutral">      → esta seção em Neutral
      <div class="piece-button piece-skin-neutral"> → override em componente
-
-   Ordem de cascata: base → md3 → notion → neutral
-   (neutral sempre vence por estar depois, mesma especificidade)
 ═══════════════════════════════════════════════════════════════════════════ */
 
-/* Inclui MD3 completo (base + md3 + reset + fontes) */
+/* ── Core ── */
 @import url("pieces.css");
 
-/* Adiciona os overrides Notion por cima */
-@import url("notion/button.css");
-@import url("notion/group-button.css");
-@import url("notion/icon-button.css");
-@import url("notion/checkbox.css");
-@import url("notion/split-button.css");
-@import url("notion/FAB.css");
-@import url("notion/badge.css");
-@import url("notion/tooltip.css");
-@import url("notion/snackbar.css");
-@import url("notion/toast.css");
-@import url("notion/switch.css");
-@import url("notion/menu.css");
-@import url("notion/text-field.css");
-@import url("notion/textarea.css");
-@import url("notion/navigation.css");
+/* ── MD3 — componentes ── */
+@import url("md3/button.css");
+@import url("md3/group-button.css");
+@import url("md3/icon-button.css");
+@import url("md3/checkbox.css");
+@import url("md3/split-button.css");
+@import url("md3/FAB.css");
+@import url("md3/badge.css");
+@import url("md3/tooltip.css");
+@import url("md3/snackbar.css");
+@import url("md3/toast.css");
+@import url("md3/switch.css");
+@import url("md3/menu.css");
+@import url("md3/progressIndicator.css");
+@import url("md3/navigation.css");
+@import url("md3/text-field.css");
+@import url("md3/textarea.css");
 
-/* Adiciona os overrides Neutral por cima */
+/* ── Neutral — componentes ── */
 @import url("neutral/button.css");
 @import url("neutral/group-button.css");
 @import url("neutral/icon-button.css");
@@ -48,3 +46,22 @@
 @import url("neutral/text-field.css");
 @import url("neutral/textarea.css");
 @import url("neutral/navigation.css");
+
+/* ── Fontes ── */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap');
+
+/* ── Variáveis padrão (Neutral) ── */
+:root {
+    --piece-main-color: 220;
+    --piece-h: var(--piece-main-color);
+    --piece-s: 10%;
+    --piece-l: 0%;
+    --piece-a: 100%;
+}
+
+* { font-family: "Inter", sans-serif; }
+.piece-skin-md3,
+.piece-skin-md3 *:not([class*="material-symbols"])     { font-family: "Google Sans Flex", sans-serif; }
+.piece-skin-neutral,
+.piece-skin-neutral *:not([class*="material-symbols"]) { font-family: "Inter", sans-serif; }

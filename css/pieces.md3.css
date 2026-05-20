@@ -1,7 +1,40 @@
 /* ═══════════════════════════════════════════════════════════════════════════
-   Pieces — Bundle MD3 (explícito)
-   Idêntico a pieces.css. Use quando precisar nomear o modelo explicitamente.
-   Adicione class="piece-md3" no <body> ou no container raiz.
+   Pieces — Bundle MD3
+   Core + modelo Material Design 3.
+   Adicione class="piece-skin-md3" no <body> ou no container raiz.
 ═══════════════════════════════════════════════════════════════════════════ */
 
+/* ── Core ── */
 @import url("pieces.css");
+
+/* ── MD3 — componentes ── */
+@import url("md3/button.css");
+@import url("md3/group-button.css");
+@import url("md3/icon-button.css");
+@import url("md3/checkbox.css");
+@import url("md3/split-button.css");
+@import url("md3/FAB.css");
+@import url("md3/badge.css");
+@import url("md3/tooltip.css");
+@import url("md3/snackbar.css");
+@import url("md3/toast.css");
+@import url("md3/switch.css");
+@import url("md3/menu.css");
+@import url("md3/progressIndicator.css");
+@import url("md3/navigation.css");
+@import url("md3/text-field.css");
+@import url("md3/textarea.css");
+
+/* ── Fontes ── */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@100..900&display=swap');
+
+/* ── Variáveis globais MD3 ── */
+:root {
+    --piece-main-color: 248;
+    --piece-h: var(--piece-main-color);
+    --piece-s: 16%;
+    --piece-l: 0%;
+    --piece-a: 100%;
+}
+
+* { font-family: "Google Sans Flex", sans-serif; }

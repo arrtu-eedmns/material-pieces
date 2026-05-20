@@ -4,8 +4,33 @@
 
 .piece-skin-neutral .piece-textarea,
 .piece-textarea.piece-skin-neutral {
-    border-radius: 4px;
-    border-width:  1px;
-    font-size: 13px;
-    padding: 8px 10px;
+    display: grid;
+    position: relative;
+    transition: .3s;
+
+    &>:nth-child(1) {
+        display: grid;
+        min-height: 88px;
+        border-radius: 4px;
+        border-style: solid;
+        border-width: 1px;
+        cursor: var(--cursor-text);
+        transition: background .6s;
+
+        &>textarea {
+            all: unset;
+            resize: none;
+            font-size: 13px;
+            padding: 8px 10px;
+            &::placeholder { user-select: none; }
+        }
+
+        &>:nth-child(2) { order: -1; }
+    }
+
+    &.piece-extra-small >:nth-child(1) { min-height: 56px; }
+    &.piece-small       >:nth-child(1) { min-height: 72px; }
+    &.piece-medium      >:nth-child(1) { min-height: 88px; }
+    &.piece-large       >:nth-child(1) { min-height: 112px; }
+    &.piece-extra-large >:nth-child(1) { min-height: 152px; }
 }

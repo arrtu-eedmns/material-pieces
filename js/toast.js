@@ -28,7 +28,7 @@ const PieceToast = {
 
         // Monta o elemento
         const el = document.createElement('div')
-        el.className = 'piece-toast piece-surface background-color-inverse-00 text-color-inverse-25 piece-toast-enter'
+        el.className = 'piece-toast piece-surface piece-toast-enter'
         el.style.bottom = bottom + 'px'
 
         if (icon) {
