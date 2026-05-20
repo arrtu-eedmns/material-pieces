@@ -55,7 +55,7 @@
 :root {
     --piece-main-color: 220;
     --piece-h: var(--piece-main-color);
-    --piece-s: 10%;
+    --piece-s: 16%;
     --piece-l: 0%;
     --piece-a: 100%;
 }
