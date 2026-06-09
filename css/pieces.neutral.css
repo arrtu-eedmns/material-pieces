@@ -9,3 +9,6 @@
 @import "./neutral/icon-button.css";
 @import "./neutral/radio.css";
 @import "./neutral/checkbox.css";
+@import "./neutral/switch.css";
+@import "./neutral/tooltip.css";
+@import "./neutral/badge.css";

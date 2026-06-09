@@ -65,6 +65,14 @@
         display: grid;
         place-content: center;
         text-wrap: nowrap;
+
+        &.piece-true  { display: none; }
+        &.piece-false { display: grid; }
+    }
+
+    &.piece-actived {
+        .piece-label.piece-true  { display: grid; }
+        .piece-label.piece-false { display: none; }
     }
 
     &:active,

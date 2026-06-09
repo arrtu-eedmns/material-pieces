@@ -1,4 +1,22 @@
 /* @arrtu/pieces — core/theme
-   Variáveis de tema: hue, chroma, tipografia, espaçamentos.
-   (a ser implementado)
+   Variáveis globais de tema. Aplique .piece-dark ou .piece-light no elemento raiz.
+   --piece-h  : matiz HSL (0-360)
+   --piece-s  : saturação HSL (%)
+   --piece-a  : alpha global (%)
+   --piece-theme / --piece-theme-operator : usados pelo piece-css-generator
 */
+
+.piece-dark {
+    --piece-theme: 0%;
+    --piece-theme-inverse: 100%;
+    --piece-theme-operator: +;
+    --piece-theme-operator-inverse: -;
+}
+
+.piece-light {
+    --piece-theme: 100%;
+    --piece-theme-inverse: 0%;
+    --piece-theme-operator: -;
+    --piece-theme-operator-inverse: +;
+}
+
