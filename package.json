@@ -11,7 +11,10 @@
     "./css/*": "./css/*",
     "./js/*": "./js/*",
     "./neutral": "./css/pieces.neutral.css",
-    "./all": "./css/pieces.all.css"
+    "./all": "./css/pieces.all.css",
+    "./core": "./js/core/pieces.js",
+    "./ripple": "./js/utils/ripple.js",
+    "./tooltip": "./js/utils/tooltip.js"
   },
   "keywords": ["design-system", "css", "pieces", "hsl"],
   "author": "arrtu",
