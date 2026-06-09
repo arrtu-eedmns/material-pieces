@@ -2,3 +2,24 @@
    Sistema de superfícies, tokens de cor, elevação, border, box-shadow.
    (a ser implementado)
 */
+
+/* ── Visibilidade por estado ────────────────────────────────────────
+   .piece-true  → oculto por padrão, visível quando actived
+   .piece-false → visível por padrão, oculto quando actived
+
+   Gatilhos:
+     - .piece-actived       → toggle.js (componentes visuais)
+     - input.piece-controller:checked → form elements (checkbox, radio, switch)
+
+   display: grid cobre os casos principais (.piece-icon, .piece-label).
+   ────────────────────────────────────────────────────────────────── */
+
+.piece-surface {
+    .piece-true { display: none; }
+
+    &.piece-actived,
+    &:has(input.piece-controller:checked) {
+        .piece-false { display: none; }
+        .piece-true  { display: grid; }
+    }
+}

@@ -16,14 +16,22 @@
        <span class="piece-label">Label</span>
      </button>
 
-   Group (single-select via .piece-toggle + .piece-group do core):
-     <div class="piece-group">
-       <button class="piece-surface piece-button piece-medium piece-toggle ...">...</button>
-       <button class="piece-surface piece-button piece-medium piece-toggle ...">...</button>
-     </div>
+   Toggle — adicione .piece-toggle para comportamento de seleção:
+     <button class="piece-surface piece-button piece-medium piece-toggle ...">
+       <span class="piece-ripple"></span>
+       <span class="piece-label">Label</span>
+     </button>
 
-   Group multi-select:
-     <div class="piece-group piece-multi">
+   Com piece-true / piece-false (visibilidade por estado — gerenciado pelo core):
+     <button class="piece-surface piece-button piece-medium piece-toggle ...">
+       <span class="piece-ripple"></span>
+       <span class="piece-false piece-icon material-symbols-rounded">star</span>
+       <span class="piece-true  piece-icon material-symbols-rounded">star</span>
+       <span class="piece-label">Label</span>
+     </button>
+
+   Group — use dentro de .piece-group (ver group.css):
+     <div class="piece-group">
        <button class="piece-surface piece-button piece-medium piece-toggle ...">...</button>
        <button class="piece-surface piece-button piece-medium piece-toggle ...">...</button>
      </div>
@@ -111,12 +119,4 @@
         .piece-label { font-size: 15px; }
         .piece-icon  { font-size: 20px; }
     }
-}
-
-/* ── Group ────────────────────────────────────────────────────── */
-
-.piece-group:has(.piece-button) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2px;
 }
