@@ -1,43 +1,9 @@
-/* ═══════════════════════════════════════════════════════════════════════════
-   Pieces — Bundle Neutral
-   Core + modelo Developer/Neutral.
-   Adicione class="piece-skin-neutral" no <body> ou no container raiz.
+/* @arrtu/pieces — barrel kit neutral
+   Importa core + componentes do kit neutral.
+   Uso: @import "@arrtu/pieces/neutral";
+*/
 
-   Aesthetic: Notion · Linear · Vercel · VSCode
-   — Outlined como padrão, compacto, monochromático, radius 4–6px.
-   — Cores 100% via piece-surface. O modelo não define cores.
-═══════════════════════════════════════════════════════════════════════════ */
-
-/* ── Core ── */
-@import url("pieces.css");
-
-/* ── Neutral — componentes ── */
-@import url("neutral/button.css");
-@import url("neutral/group-button.css");
-@import url("neutral/icon-button.css");
-@import url("neutral/checkbox.css");
-@import url("neutral/split-button.css");
-@import url("neutral/FAB.css");
-@import url("neutral/badge.css");
-@import url("neutral/tooltip.css");
-@import url("neutral/snackbar.css");
-@import url("neutral/toast.css");
-@import url("neutral/switch.css");
-@import url("neutral/menu.css");
-@import url("neutral/text-field.css");
-@import url("neutral/textarea.css");
-@import url("neutral/navigation.css");
-
-/* ── Fontes ── */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap');
-
-/* ── Variáveis globais Neutral ── */
-:root {
-    --piece-main-color: 220;
-    --piece-h: var(--piece-main-color);
-    --piece-s: 16%;
-    --piece-l: 0%;
-    --piece-a: 100%;
-}
-
-* { font-family: "Inter", sans-serif; }
+@import "./core/pieces.css";
+@import "./neutral/icon-button.css";
+@import "./neutral/radio.css";
+@import "./neutral/checkbox.css";

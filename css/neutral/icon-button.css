@@ -1,28 +1,3 @@
-/* ─── Pieces — Neutral — Icon Button ──────────────────────────────────────────
-   Retangular, compacto. Mesma escala de tamanhos do button neutral.
-────────────────────────────────────────────────────────────────────────────── */
-
-.piece-skin-neutral .piece-icon-button,
-.piece-icon-button.piece-skin-neutral {
-
-    &.piece-extra-small {
-        --border-radius: 4px;
-        --active-radius: 4px;
-    }
-    &.piece-small {
-        --border-radius: 4px;
-        --active-radius: 4px;
-    }
-    &.piece-medium {
-        --border-radius: 4px;
-        --active-radius: 4px;
-    }
-    &.piece-large {
-        --border-radius: 5px;
-        --active-radius: 5px;
-    }
-    &.piece-extra-large {
-        --border-radius: 6px;
-        --active-radius: 6px;
-    }
-}
+/* @arrtu/pieces — neutral/icon-button
+   (a ser implementado)
+*/

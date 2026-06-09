@@ -1,8 +1,0 @@
-/* ─── Pieces — Neutral — Badge ─────────────────────────────────────────────────
-   Radius mínimo — badge retangular (tipo count do VSCode/Linear).
-────────────────────────────────────────────────────────────────────────────── */
-
-.piece-skin-neutral .piece-badge,
-.piece-badge.piece-skin-neutral {
-    --border-radius: 3px;
-}

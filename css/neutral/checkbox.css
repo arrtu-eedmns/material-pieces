@@ -1,28 +1,3 @@
-/* ─── Pieces — Neutral — Checkbox ─────────────────────────────────────────────
-   Quadrado com radius mínimo. Sem variação de tamanho no radius.
-────────────────────────────────────────────────────────────────────────────── */
-
-.piece-skin-neutral .piece-checkbox,
-.piece-checkbox.piece-skin-neutral {
-
-    &.piece-extra-small {
-        --border-radius: 3px;
-        --active-radius: 3px;
-    }
-    &.piece-small {
-        --border-radius: 3px;
-        --active-radius: 3px;
-    }
-    &.piece-medium {
-        --border-radius: 4px;
-        --active-radius: 4px;
-    }
-    &.piece-large {
-        --border-radius: 4px;
-        --active-radius: 4px;
-    }
-    &.piece-extra-large {
-        --border-radius: 5px;
-        --active-radius: 5px;
-    }
-}
+/* @arrtu/pieces — neutral/checkbox
+   (a ser implementado)
+*/

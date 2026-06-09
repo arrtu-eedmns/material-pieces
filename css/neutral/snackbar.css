@@ -1,8 +1,0 @@
-/* ─── Pieces — Neutral — Snackbar ─────────────────────────────────────────────
-   Retangular. Radius baixo, alinhado com o restante do modelo.
-────────────────────────────────────────────────────────────────────────────── */
-
-.piece-skin-neutral .piece-snackbar,
-.piece-skin-neutral.piece-snackbar {
-    --border-radius: 4px;
-}

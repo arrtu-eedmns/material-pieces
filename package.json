@@ -1,36 +1,23 @@
 {
-  "name": "material-pieces",
-  "version": "1.0.0",
-  "description": "Pieces — sistema de componentes CSS/JS baseado em HSL tokens e Material Design 3",
-  "style": "css/pieces.css",
+  "name": "@arrtu/pieces",
+  "version": "0.1.0",
+  "description": "Pieces — HSL-based design system",
+  "type": "module",
   "files": [
     "css/",
     "js/"
   ],
   "exports": {
-    ".":                  "./css/pieces.css",
-    "./md3":              "./css/pieces.md3.css",
-    "./notion":           "./css/pieces.notion.css",
-    "./neutral":          "./css/pieces.neutral.css",
-    "./all":              "./css/pieces.all.css",
-    "./base/*":           "./css/base/*.css",
-    "./md3/*":            "./css/md3/*.css",
-    "./notion/*":         "./css/notion/*.css",
-    "./neutral/*":        "./css/neutral/*.css"
+    "./css/*": "./css/*",
+    "./js/*": "./js/*",
+    "./neutral": "./css/pieces.neutral.css",
+    "./all": "./css/pieces.all.css"
   },
-  "keywords": [
-    "css",
-    "components",
-    "design-system",
-    "material-design",
-    "material-design-3",
-    "md3",
-    "hsl",
-    "tokens"
-  ],
+  "keywords": ["design-system", "css", "pieces", "hsl"],
+  "author": "arrtu",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SEU_USUARIO/material-pieces.git"
+    "url": "https://github.com/arrtu-eedmns/material-pieces.git"
   }
 }
