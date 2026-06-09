@@ -4,6 +4,7 @@
 */
 
 @import "./core/pieces.css";
+@import "./neutral/button.css";
 @import "./neutral/icon-button.css";
 @import "./neutral/radio.css";
 @import "./neutral/checkbox.css";
