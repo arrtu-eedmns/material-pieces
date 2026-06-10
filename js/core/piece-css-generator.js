@@ -178,8 +178,7 @@ function scanElement(el) {
     });
 }
 
-function initPieceCSSGenerator() {
-    document.querySelectorAll('*').forEach(scanElement);
+function setupObserver() {
     const observer = new MutationObserver(mutations => {
         for (const m of mutations) {
             if (m.type === 'attributes' && m.attributeName === 'class') scanElement(m.target);
@@ -193,8 +192,18 @@ function initPieceCSSGenerator() {
             }
         }
     });
-    observer.observe(document.body, { subtree: true, childList: true, attributes: true, attributeFilter: ['class'] });
+    observer.observe(document.documentElement, { subtree: true, childList: true, attributes: true, attributeFilter: ['class'] });
 }
 
-if (document.body) initPieceCSSGenerator();
-else document.addEventListener('DOMContentLoaded', initPieceCSSGenerator);
+// Inicia o observer imediatamente — document.documentElement existe antes do body
+setupObserver();
+
+// Full scan como segurança para elementos já no DOM antes do script carregar
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('*').forEach(scanElement);
+});
+
+// Remove placeholder dos ícones quando Material Symbols carregar
+document.fonts.load('1em "Material Symbols Rounded"').then(() => {
+    document.documentElement.classList.add('icons-loaded');
+});
